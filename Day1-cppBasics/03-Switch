@@ -1,0 +1,65 @@
+#include <iostream>
+using namespace std;
+/*
+  Take the day no and print the corresponding day
+for 1 print monday ,
+  for 2 print tuesday and so on for 7 print sunday.*/
+
+int main() {
+  int day;
+  cin >> day;
+  switch (day) {
+  case 1:
+    cout << "monday ";
+  case 2:
+    cout << "tuesday";
+  case 3:
+    cout << "wed";
+  case 4:
+    cout << "thur";
+  case 5:
+    cout << "fri";
+  case 6:
+    cout << "sat";
+  case 7:
+    cout << "sun";
+  }
+  return 0;
+}
+
+// now if i give input 5 it will print all the days after 5 so to avoid this we
+// will use concept in cpp known as - Break
+int main() {
+  int day;
+  cin >> day;
+  switch (day) {
+  case 1:
+    cout << "monday ";
+    break;
+  case 2:
+    cout << "tuesday";
+    break;
+  case 3:
+    cout << "wed";
+    break;
+  case 4:
+    cout << "thur";
+    break;
+  case 5:
+    cout << "fri";
+    break;
+  case 6:
+    cout << "sat";
+    break;
+  case 7:
+    cout << "sun";
+    break;
+    default:
+    cout << "Invalid";
+  }
+  
+  return 0;
+}
+
+// there something known as default.
+default case if none of the case is executed it falls back to default case.
