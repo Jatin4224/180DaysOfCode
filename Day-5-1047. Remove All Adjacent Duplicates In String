@@ -1,0 +1,23 @@
+class Solution {
+public:
+    string removeDuplicates(string s) {
+        string ans = "";
+        int index = 0;
+
+        while(index < s.length()) {
+            //ans ka rightmost and string s ka current character same
+            if( ans.length() > 0 && ans[ans.length() - 1] == s[index]) {
+                     //ans mese pop karnaa h 
+                     ans.pop_back();
+
+            }
+            else {
+                ans.push_back(s[index]);
+            }
+                
+               index++;
+        };
+        return ans;
+    };
+ 
+};
